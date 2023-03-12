@@ -88,3 +88,44 @@ return view('kampus.mahasiswa")->with(compact("mahasiswa01",
 "mahasiswa03",
 "mahasiswa04"));
 });
+
+#### hari minggu ####
+# 1
+Route::get('/mahasiswa', function () {
+$nama = 'John Paijo Simatupang';
+$nilai = 75;
+return view('mahasiswa', compact('nama', 'nilai'));
+});
+
+# 2
+Route::get('/mahasiswa', function () {
+$nama = '<u>Elon Musk Batubara</u>';
+$nilai=75;
+return view('mahasiswa', compact('nama', 'nilai'));
+}):
+
+#4
+Route::get('/mahasiswa', function () {
+$nama = 'Elon Musk Batubara';
+$nilai = 75;
+return view('mahasiswa',compact('nama', 'nilai'));
+}):
+
+#6
+Route::get('/mahasiswa', function () {
+$nama = 'Vladimir Putin Harahap';
+$nilai = [80,64,30,76,95];
+return view('mahasiswa', compact('nama', 'nilai'));
+}):
+
+#8
+<!-- Perintah Continue dan Break
+Di dalam PH native, terdapat perintah continue dan break yang bisa dipakai untuk
+mengatur alur perulangan. Blade juga menyediakan perintah @continue dan @break
+sebagai alternatif penulisan.
+web.php -->
+Route::get('mahasiswa', function () {
+$nama = 'Tya Kirana Putri';
+$nilai = [80,64,30,76,95];
+return view('mahasiswa', compact('nama', 'nilai'));
+});
